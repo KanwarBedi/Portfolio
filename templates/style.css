@@ -1,0 +1,56 @@
+#nav {
+    text-align: center; 
+}
+
+#nav li {
+    display: inline;
+}
+
+#nav a {
+    text-decoration: none; 
+    padding: 0 30px; /* variable width */
+}
+
+#background-img {
+    background-image: url("static/background2.jpg"); /*adding a background image*/
+    background-size: cover; /*stretching the image to the size of the cover*/
+    background-attachment: fixed; /* Ensure background image remains fixed */
+    height: 100vh; /* Set initial height to viewport height */
+    background-position: center; /* Center the background image */
+}
+
+.centered-text {
+    text-align: center;
+    margin-top: 20vh; /* Adjust this value to vertically center */
+    position: relative;
+}
+
+ .centered-text h4 {
+    margin: 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 20px;
+    text-align: center; /* Center the content horizontally */
+}
+
+section {
+    padding: 20px;
+    overflow-y: auto;
+    text-align: center; /* Center the content horizontally */
+}

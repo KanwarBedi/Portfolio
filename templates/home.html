@@ -4,48 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="style.css/">
 </head>
-<body>
+<body id="background-img">
     <header>
-        <h1>My Portfolio</h1>
+        <!-- <h1>Kanwar Bedi</h1> -->
         <nav>
-            <ul>
+            <ul id="nav">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#contact">Contact</a></li>
                 <li><a href="#work">Work Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="home">
-        <h2>Home</h2>
+    <div class="centered-text">
+        <h2>Kanwar Bedi</h2>
+        <h4>Software Engineer</h4>
         <p>Welcome to my portfolio website!</p>
-    </section>
+    </div>
+    <section>
+        <p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+        </p>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>You can contact me via email at <a href="mailto:your@email.com">your@email.com</a>.</p>
-    </section>
+        <p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
 
-    <section id="work">
-        <h2>Work Experience</h2>
-        <ul>
-            <li>Company A - Position A (Year - Year)</li>
-            <li>Company B - Position B (Year - Year)</li>
-            <!-- Add more work experience as needed -->
-        </ul>
-    </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li>Project 1 - Description of Project 1</li>
-            <li>Project 2 - Description of Project 2</li>
-            <!-- Add more projects as needed -->
-        </ul>
+        </p>
     </section>
+    <script>
+        // Add parallax scrolling effect to background image
+        window.addEventListener('scroll', function() {
+            const scrolled = window.scrollY;
+            const background = document.getElementById('background-img');
+            background.style.backgroundPositionY = -(scrolled * 0.5) + 'px'; // Adjust the speed of the parallax effect here
+        });
+    </script>
 
     <footer>
         <p>&copy; 2024 My Portfolio</p>
